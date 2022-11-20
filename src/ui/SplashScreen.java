@@ -35,13 +35,14 @@ public class SplashScreen extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(progressbar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 380, -1));
 
         jLabel1.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(204, 204, 255));
         jLabel1.setText("SAFE-X");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, -1, -1));
 
         prLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         prLabel.setForeground(new java.awt.Color(255, 255, 255));
@@ -49,7 +50,7 @@ public class SplashScreen extends javax.swing.JFrame {
         getContentPane().add(prLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 156, 62, 20));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assest/gradient.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-28, -19, 450, 250));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-28, -19, 430, 250));
 
         pack();
         setLocationRelativeTo(null);

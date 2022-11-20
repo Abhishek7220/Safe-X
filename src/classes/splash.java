@@ -19,12 +19,14 @@ public class splash {
         ui.SplashScreen frame = new ui.SplashScreen();
         frame.setVisible(true);
         
+        ui.Login logFrame = new ui.Login();
+
         try {
             for (int i = 0; i <= 100; i++) {
                 int s = 20;
                 Thread.sleep(s);
                 prLabel.setText(Integer.toString(i) + "%");
-                
+
                 int x = prLabel.getX();
                 int y = prLabel.getY();
                 int h = prLabel.getHeight();
@@ -33,7 +35,11 @@ public class splash {
 
                 prLabel.setBounds(x, y, h, w);
                 progressbar.setValue(i);
-                
+                if (i == 100) {
+                    frame.hide();
+                    logFrame.setVisible(true);
+                }
+
             }
         } catch (Exception e) {
         }
